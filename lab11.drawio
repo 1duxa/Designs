@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="IDEF0 Diagram" id="idef0-process">
+    <mxGraphModel dx="989" dy="477" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="globalProcess">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="globalProcess" value="A-0: Автоматизований розрахунок шляху машини та планованих витрат" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="100" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inputGlobal" value="Пункти відправлення/прибуття" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="100" y="330" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=11;fontFamily=Verdana;" edge="1" parent="1" source="controlGlobal" target="subProcessA3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="670" />
+              <mxPoint x="370" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.677;entryDx=0;entryDy=0;entryPerimeter=0;curved=0;fontSize=11;fontFamily=Verdana;" edge="1" parent="1" source="controlGlobal" target="subProcessA4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="660" />
+              <mxPoint x="290" y="604" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controlGlobal" value="&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;Регламенти планування перевезень&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;&amp;nbsp;(час доставки, допустимі витрати).&lt;/span&gt;" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="110" y="640" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.413;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;curved=0;fontSize=11;fontFamily=Verdana;" edge="1" parent="1" source="outputGlobal" target="subProcessA4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="610" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="250" y="591" />
+              <mxPoint x="270" y="591" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="outputGlobal" value="Алгоритми розрахунку оптимального маршруту" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="100" y="570" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mechanismGlobal" value="Механізми: Система планування, алгоритми" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="264" y="200" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowInputGlobal" style="fontSize=11;fontFamily=Verdana;" parent="1" source="inputGlobal" target="subProcessA1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowMechanismGlobal" parent="1" source="mechanismGlobal" target="globalProcess" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="subProcessA1" value="Збір вхідних даних" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="110" y="400" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subProcessA2" value="Аналіз дорожньої мережі" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="220" y="470" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subProcessA3" value="Розрахунок витрат" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="430" y="650" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subProcessA4" value="Вибір оптимального маршруту" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="319" y="570" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="subProcessA5" value="Генерація звіту" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="600" y="720" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowSubProcess2" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontFamily=Verdana;" parent="1" source="subProcessA1" target="subProcessA2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowSubProcess3" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontFamily=Verdana;" parent="1" source="subProcessA2" target="subProcessA4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowSubProcess4" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontFamily=Verdana;" parent="1" source="subProcessA3" target="subProcessA5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowSubProcess5" style="edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;fontFamily=Verdana;" parent="1" source="subProcessA4" target="subProcessA3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=11;fontFamily=Verdana;" edge="1" parent="1" source="ujaLc95wmTEn-ob4A1gS-4" target="subProcessA1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="55" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-4" value="Характеристики транспорту" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="10" y="470" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-8" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Інформація про дорожню мережу&lt;/span&gt; (карти, затори, дорожні ремонти)." style="text;whiteSpace=wrap;html=1;fontSize=11;align=center;fontFamily=Verdana;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="170" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ujaLc95wmTEn-ob4A1gS-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.718;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;curved=0;fontSize=11;fontFamily=Verdana;" edge="1" parent="1" source="ujaLc95wmTEn-ob4A1gS-8" target="subProcessA2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
